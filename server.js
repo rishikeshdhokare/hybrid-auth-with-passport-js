@@ -18,7 +18,7 @@ require('./config/passport.js')(passport);
 app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(bodyParser());
-app.use(session({ secret: 'ilovescotchscotchyscotchscotch' }));
+app.use(session({ secret: 'yoursecretkey' }));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash());
